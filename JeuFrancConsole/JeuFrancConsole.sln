@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeuFrancConsole", "JeuFrancConsole\JeuFrancConsole.csproj", "{33F7FD80-6DA5-46A3-9F00-B2A93A5D9742}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeuFrancCore", "..\JeuFrancCore\JeuFrancCore\JeuFrancCore.csproj", "{3DC2143E-34C7-455A-9FE9-E4FEFACFDAEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33F7FD80-6DA5-46A3-9F00-B2A93A5D9742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33F7FD80-6DA5-46A3-9F00-B2A93A5D9742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33F7FD80-6DA5-46A3-9F00-B2A93A5D9742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33F7FD80-6DA5-46A3-9F00-B2A93A5D9742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC2143E-34C7-455A-9FE9-E4FEFACFDAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC2143E-34C7-455A-9FE9-E4FEFACFDAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC2143E-34C7-455A-9FE9-E4FEFACFDAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC2143E-34C7-455A-9FE9-E4FEFACFDAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
