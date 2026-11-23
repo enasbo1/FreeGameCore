@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeuFrancConsole", "JeuFrancConsole\JeuFrancConsole.csproj", "{0CC13112-C1E5-4460-AC16-FEC1968D77E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeuFrancIA", "JeuFrancIA\JeuFrancIA.csproj", "{0CC13112-C1E5-4460-AC16-FEC1968D77E0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeuFrancCore", "JeuFrancCore\JeuFrancCore.csproj", "{E3A82E19-C256-40C6-B520-5267E8E64A64}"
 EndProject
