@@ -4,7 +4,7 @@ game core affachi de tout moteur de jeu spécifique pour **pong**
 
 ## GameRule
 2 joueurs \
-1 bale
+1 balle
 ### Joueur Input
 \<Espace> ->  changement de direction \
 contrôle une barre sur laquelle la balle rebondi

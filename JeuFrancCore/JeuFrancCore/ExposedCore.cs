@@ -1,6 +1,7 @@
-﻿using System.Numerics;
+﻿using System.Data;
+using System.Numerics;
 namespace JeuFrancCore;
-using GameState = (Vector2, Vector2, Vector2 );
+using GameState = (Vector2, Vector2, Vector2);
 using GameAction = (bool, bool);
 
 public struct InitParams
@@ -9,46 +10,30 @@ public struct InitParams
     {
     }
     public Vector2 FieldSize { get; set; } = Vector2.One;
+    public float BallSpeed { get; set; } = 2f;
+    public float PlayerSpeed { get; set; } = 1f;
 }
 
-public class ExposedCore
+public class ExposedCore : ACore<GameLogik, InitParams, GameState, GameAction>
 {
     private Vector2 _fieldSize;
+    private float _ballSpeed;
+    private float _playerSpeed;
     private GameAction _action;
     private GameState _state;
-    private GameLogik _logik = new();
+    private bool _terminal = false;
+    private float _reward = 0f;
+    private readonly GameLogik _logik = new();
 
-    public void SetInitParams(InitParams initParams)
+    public override void SetInitParams(InitParams initParams)
     {
         _fieldSize = initParams.FieldSize;
-    }
-    public GameState GetState()
-    {
-        return _state;
+        _ballSpeed = initParams.BallSpeed;
+        _playerSpeed = initParams.PlayerSpeed;
     }
 
-    internal void SetState(GameState newState)
+    public override void Init()
     {
-        _state = newState;
-    }
-
-    public void SetAction(bool p1Input, bool p2Input)
-    {
-        _action = (p1Input, p2Input);
-    }
-
-    internal GameAction GetAction()
-    {
-        return _action;
-    }
-
-    public void Step(double timeStep)
-    {
-        _state = _logik.Step(timeStep, _action, _state, _fieldSize);
-    }
-
-    public void Init()
-    {
-        
+        _logik.Init(_playerSpeed, _ballSpeed, _fieldSize);
     }
 }
